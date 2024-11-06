@@ -3,10 +3,10 @@ import axios from 'axios';
 
 @Controller()
 export class ApiGatewayController {
-  private readonly cartServiceUrl = 'http://localhost:3003';
-  private readonly orderServiceUrl = 'http://localhost:3000';
-  private readonly productServiceUrl = 'http://localhost:3002';
-  private readonly userServiceUrl = 'http://localhost:3001';
+  private readonly cartServiceUrl = 'https://micro-cart.vercel.app';
+  private readonly orderServiceUrl = 'https://micro-order.vercel.app';
+  private readonly productServiceUrl = 'https://micro-product-p7ec.vercel.app';
+  private readonly userServiceUrl = 'https://micro-user.vercel.app';
 
   @Get('cart/:userId')
   async getCart(@Param('userId') userId: number) {
